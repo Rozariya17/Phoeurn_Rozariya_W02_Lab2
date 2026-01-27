@@ -4,34 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up for GitHub - GitHub</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <h1>Sign up for GitHub</h1>
+
     <form>
-        <label for="email">Email </label><br>
-        <input type="email" id="email" name="email" required placeholder="Email"><br><br>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="Email">
+        </div>
 
-        <label for="password">Password</label><br>
-        <input type="password" id="password" name="password" required placeholder="Password"><br><br>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required placeholder="Password">
+        </div>
 
-        <label for="username">Username</label><br>
-        <input type="text" id="username" name="username" required placeholder="Username"><br><br>
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required placeholder="Username">
+        </div>
 
-        <label for="Country">Your Country/Region</label><br>
-        <select name="country" id="county">
-            <option value="Cambodia" selected>Cambodia</option>
-            <option value="United States">United States</option>
-            <option value="Canada">Canada</option>
-            <option value="United Kingdom">United Kingdom</option>
-            <option value="Australia">Australia</option>
-            <option value="Other">Other</option>
-        </select><br><br>
+        <div class="form-group">
+            <label for="Country">Your Country/Region</label>
+            <select name="country" id="county">
+                <option value="Cambodia" selected>Cambodia</option>
+                <option value="United States">United States</option>
+                <option value="Canada">Canada</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="Australia">Australia</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
 
-        <label for="email_perfernces">Email Preferences</label><br>
-        <input type="checkbox" id="email_perfernces" name="email_perfernces" value="newsletter">
-        <label for="email_perfernces">Receive occasional product updates and announcements</label><br><br>
+        <div class="checkbox-group">
+            <input type="checkbox" id="email_perfernces" name="email_perfernces" value="newsletter">
+            <label for="email_perfernces">Receive occasional product updates and announcements</label>
+        </div>
 
-        <input type="submit" value="Submit"> 
+        <input type="submit" value="Create Account >"> 
     </form>
+
 </body>
 </html>
